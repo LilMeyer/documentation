@@ -49,3 +49,8 @@ git clone git@github-work:account/repo-name.git
 # instead of
 git clone git@github.com:account/repo-name.git
 ```
+
+
+References
+---
+- [Authentication](https://developer.github.com/guides/using-ssh-agent-forwarding/#testing-ssh-agent-forwarding)

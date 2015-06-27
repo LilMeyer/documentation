@@ -75,3 +75,8 @@ Ssh mode verbose
 ```sh
 ssh -vvv root@address.com
 ```
+
+
+References
+---
+- [Centos OpenSSH](http://wiki.centos.org/HowTos/Network/SecuringSSH)
