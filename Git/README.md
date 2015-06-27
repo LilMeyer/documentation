@@ -35,6 +35,11 @@ Generate ssh key [[*]](https://help.github.com/articles/generating-ssh-keys/)
 ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
+Clean untracked files and directories
+```sh
+git clean -df
+```
+
 
 Use multiple github accounts, change file ~/.ssh/config [[*]](http://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574)
 ```sh
