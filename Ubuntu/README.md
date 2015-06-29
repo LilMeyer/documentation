@@ -8,6 +8,16 @@ cat /etc/issue
 lsb_release -a
  ```
 
+Install a package .deb [[*]](http://askubuntu.com/questions/40779/how-do-i-install-a-deb-file-via-the-command-line)
+```sh
+sudo dpkg -i <deb_package.deb>
+```
+
+Uninstall a package
+```sh
+sudo dpkg -r <deb_package.deb>
+```
+
 Take a screenshot
 ```sh
 import -window root -quality 98 screenshot.png
@@ -15,7 +25,7 @@ import -window root -quality 98 screenshot.png
 
 Show/hide hidden files in nautilus
 ```sh
-Ctrl + H 
+Ctrl + H
 ```
 
 Prevent screen from locking
@@ -106,12 +116,12 @@ userdel -r username
 
 Show all services
 ```sh
-service --status-all 
+service --status-all
 ```
 
 Active internet connections
 ```sh
-netstat -tulpn 
+netstat -tulpn
 ```
 
 Display all sessions
