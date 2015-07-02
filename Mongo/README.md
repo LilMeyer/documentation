@@ -1,6 +1,18 @@
 MongoDB
 ---
 
+## Mongod
+
+Display version of the database
+```sh
+db.version()
+```
+
+### Running as a service
+```sh
+sudo service mongod start/stop
+```
+
 ## Dev ops manager
 
 [Download](https://www.mongodb.com/subscription/downloads/ops-manager)

@@ -8,6 +8,11 @@ cat /etc/issue
 lsb_release -a
  ```
 
+Check the current kernel version
+```sh
+uname -r
+```
+
 Install a package .deb [[*]](http://askubuntu.com/questions/40779/how-do-i-install-a-deb-file-via-the-command-line)
 ```sh
 sudo dpkg -i <deb_package.deb>

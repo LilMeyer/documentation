@@ -30,6 +30,19 @@ If multiple remotes
 checkout -b branch_name remote-name/branch_name
 ```
 
+Delete a branch locally
+```sh
+git branch -d <branch_name>
+git branch -D <branch_name> # Force delete un-merged branches
+```
+
+Delete a branch both locally and remotely [[*]](http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely)
+```sh
+git push origin --delete <branch_name> # OR
+git push origin :<branch_name>
+```
+
+
 Generate ssh key [[*]](https://help.github.com/articles/generating-ssh-keys/)
 ```sh
 ssh-keygen -t rsa -C "your_email@example.com"
@@ -48,7 +61,7 @@ Host github-work
   User git
   IdentityFile ~/.ssh/id_rsa_work
 ```
-Then clone repository with 
+Then clone repository with
 ```sh
 git clone git@github-work:account/repo-name.git
 # instead of
