@@ -42,7 +42,7 @@ git push origin --delete <branch_name> # OR
 git push origin :<branch_name>
 ```
 
-Update remote branches list
+Update remote branches list [[*]](https://junaidpven.wordpress.com/2011/12/29/how-to-update-remote-branch-list-on-local-machine/)
 ```sh
 git remote update origin --prune
 ```
