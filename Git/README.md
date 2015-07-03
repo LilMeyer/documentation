@@ -36,12 +36,16 @@ git branch -d <branch_name>
 git branch -D <branch_name> # Force delete un-merged branches
 ```
 
-Delete a branch both locally and remotely [[*]](http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely)
+Delete a branch remotely [[*]](http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely)
 ```sh
 git push origin --delete <branch_name> # OR
 git push origin :<branch_name>
 ```
 
+Update remote branches list
+```sh
+git remote update origin --prune
+```
 
 Generate ssh key [[*]](https://help.github.com/articles/generating-ssh-keys/)
 ```sh
