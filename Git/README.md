@@ -63,7 +63,7 @@ List all stashes
 git stash list
 ```
 
-Save a stash with a name
+Save a stash with a name [[*]](http://stackoverflow.com/questions/11269256/how-to-name-a-stash-in-git)
 ```sh
 git stash save "<stash_name>"
 ```
