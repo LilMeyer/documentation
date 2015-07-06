@@ -57,6 +57,16 @@ Clean untracked files and directories
 git clean -df
 ```
 
+#### Stashes
+List all stashes
+```sh
+git stash list
+```
+
+Save a stash with a name
+```sh
+git stash save "<stash_name>"
+```
 
 Use multiple github accounts, change file ~/.ssh/config [[*]](http://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574)
 ```sh
