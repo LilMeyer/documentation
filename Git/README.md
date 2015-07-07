@@ -68,6 +68,19 @@ Save a stash with a name [[*]](http://stackoverflow.com/questions/11269256/how-t
 git stash save "<stash_name>"
 ```
 
+See what's in a stash without applying [[*]](http://stackoverflow.com/questions/10725729/git-see-whats-in-a-stash-without-applying-stash)
+```sh
+git stash show -p stash@{0}
+```
+Drop the last created stash
+```sh
+git stash drop
+```
+Drop a specific stash
+```sh
+git stash stash@{0}
+```
+
 Use multiple github accounts, change file ~/.ssh/config [[*]](http://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574)
 ```sh
 Host github-work
