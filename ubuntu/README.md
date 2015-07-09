@@ -124,6 +124,11 @@ Show all services
 service --status-all
 ```
 
+Stop a service from starting on boot [[*]](http://superuser.com/questions/35151/how-do-i-stop-services-from-starting-on-boot-on-ubuntu)
+```sh
+sudo update-rc.d -f <service_name> remove
+```
+
 Active internet connections
 ```sh
 netstat -tulpn
