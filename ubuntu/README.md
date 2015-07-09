@@ -162,7 +162,16 @@ Ssh mode verbose
 ```sh
 ssh -vvv root@address.com
 ```
+## Space usage
+Disk usage
+```sh
+df -h
+```
 
+Memory usage
+```sh
+free -mh
+```
 
 References
 ---
