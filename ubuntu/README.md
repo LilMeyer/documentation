@@ -8,10 +8,14 @@ cat /etc/issue
 lsb_release -a
  ```
 
+<<<<<<< Updated upstream:ubuntu/README.md
 Check the current kernel version
 ```sh
 uname -r
 ```
+=======
+
+>>>>>>> Stashed changes:Ubuntu/README.md
 
 Install a package .deb [[*]](http://askubuntu.com/questions/40779/how-do-i-install-a-deb-file-via-the-command-line)
 ```sh
@@ -118,6 +122,10 @@ Remove a user, option r removes the user's home directory [[*]](http://www.cyber
 userdel -r username
 ```
 
+Get the ip address
+```sh
+curl -s http://whatismijnip.nl | cut -d " " -f 5
+```
 
 Show all services
 ```sh
