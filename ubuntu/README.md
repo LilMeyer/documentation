@@ -8,14 +8,11 @@ cat /etc/issue
 lsb_release -a
  ```
 
-<<<<<<< Updated upstream:ubuntu/README.md
 Check the current kernel version
 ```sh
 uname -r
 ```
 =======
-
->>>>>>> Stashed changes:Ubuntu/README.md
 
 Install a package .deb [[*]](http://askubuntu.com/questions/40779/how-do-i-install-a-deb-file-via-the-command-line)
 ```sh
@@ -45,6 +42,21 @@ gsettings set org.gnome.desktop.session idle-delay 0
 All processes
 ```sh
 top
+```
+
+
+## Shells
+Fish [[*]](http://hackercodex.com/guide/install-fish-shell-mac-ubuntu/)
+Installation
+```sh
+sudo add-apt-repository ppa:fish-shell/nightly-master
+sudo apt-get update
+sudo apt-get install fish
+```
+
+Change the default shell
+```sh
+chsh -s /usr/bin/bash
 ```
 
 ## Compression
