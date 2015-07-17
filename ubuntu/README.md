@@ -12,7 +12,6 @@ Check the current kernel version
 ```sh
 uname -r
 ```
-=======
 
 Install a package .deb [[*]](http://askubuntu.com/questions/40779/how-do-i-install-a-deb-file-via-the-command-line)
 ```sh
@@ -197,6 +196,41 @@ Memory usage
 ```sh
 free -mh
 ```
+
+## Wifi networks [[*]](https://help.ubuntu.com/community/WifiDocs/Scan_for_Wireless_Network)
+List all interface name of cards
+```sh
+ls /sys/class/net
+```
+
+Scan for open networks
+```sh
+sudo iwlist <wifi_interface> scan
+# example sudo iwlist wlan0 scan
+```
+
+List all networks available
+```sh
+sudo iwlist <wifi_interface> scan | grep ESSID
+# example sudo iwlist wlan0 scan | grep ESSID
+```
+Connect to a specific network
+```sh
+sudo iwconfig <wifi_interface> essid <essid>
+```
+
+### With nmcli [[*]](http://askubuntu.com/questions/461825/connect-to-wifi-from-command-line)
+List all saved networks
+```sh
+nmcli -p con list
+```
+
+Connect to a network
+```sh
+nmcli -p con up id <connection_name> iface <wifi_interface>
+# example nmcli -p con up id Transcovo iface wlan0
+```
+
 
 References
 ---
