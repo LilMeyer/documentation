@@ -6,6 +6,7 @@ Display version
 ```sh
 cat /etc/issue
 lsb_release -a
+cat /etc/*release*
  ```
 
 Check the current kernel version
@@ -73,12 +74,10 @@ gzip -cd <archive_name>.cpgz | cpio -idmv
 
 ## User management
 
-
-List all groups [[*]](http://stackoverflow.com/questions/14059916/is-there-a-command-to-list-all-unix-group-names)
+Get info on the user
 ```sh
-groups                 # OR
-cut -d: -f1 /etc/group # OR
-getent group
+id
+groups
 ```
 
 List all users [[*]](http://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users)
@@ -86,15 +85,20 @@ List all users [[*]](http://askubuntu.com/questions/410244/a-command-to-list-all
 cut -d: -f1 /etc/passwd
 ```
 
-Add a new group
-
-```sh
-groupadd group
-```
-
 Add a new user
 ```sh
 sudo adduser new_username
+```
+
+List all groups [[*]](http://stackoverflow.com/questions/14059916/is-there-a-command-to-list-all-unix-group-names)
+```sh
+cut -d: -f1 /etc/group # OR
+getent group
+```
+
+Add a new group
+```sh
+groupadd group
 ```
 
 Add a new user to a group
@@ -235,3 +239,4 @@ nmcli -p con up id <connection_name> iface <wifi_interface>
 References
 ---
 - [Centos OpenSSH](http://wiki.centos.org/HowTos/Network/SecuringSSH)
+- [Centos user management](https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-users-tools.html)
