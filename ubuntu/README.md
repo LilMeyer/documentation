@@ -44,6 +44,12 @@ All processes
 top
 ```
 
+## Node
+### NVM
+Use a specific version of node by default
+```
+nvm alias default 5
+```
 
 ## Shells
 Fish [[*]](http://hackercodex.com/guide/install-fish-shell-mac-ubuntu/)
