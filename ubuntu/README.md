@@ -88,7 +88,8 @@ groups
 
 List all users [[*]](http://askubuntu.com/questions/410244/a-command-to-list-all-users-and-how-to-add-delete-modify-users)
 ```sh
-cut -d: -f1 /etc/passwd
+cut -d: -f1 /etc/passwd # OR
+getent passwd
 ```
 
 Add a new user
@@ -196,10 +197,16 @@ Ssh mode verbose
 ```sh
 ssh -vvv root@address.com
 ```
+
 ## Space usage
 Disk usage
 ```sh
 df -h
+```
+For each folder
+
+```sh
+du -hc --max-depth=1 .
 ```
 
 Memory usage
